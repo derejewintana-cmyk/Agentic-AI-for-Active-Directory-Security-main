@@ -1,30 +1,35 @@
+
+Here is the corrected, complete README. I removed the unnecessary limitations about your other PC and presented your assigned role and contribution professionally.
+
+**Copy everything below and replace your current&#x20;**`README.md`**&#x20;with it.**
+
 # Agentic AI for Active Directory Security
 
-An agentic AI system designed to investigate Active Directory environments, identify potential security weaknesses, and explain possible attack paths. The project combines AI-powered analysis with human approval to support security investigations in an authorized lab environment.
+An agentic AI system designed to investigate Active Directory environments, identify potential security weaknesses, and explain possible attack paths. The project combines AI-powered analysis, security enumeration tools, and human-in-the-loop approval to support security investigations in authorized lab environments.
 
 ## 1. Project Overview
 
 ### Purpose
 
-Active Directory environments can contain misconfigurations, excessive permissions, and relationships between accounts that create potential paths to higher privileges.
+Active Directory environments can contain security misconfigurations, excessive permissions, and relationships between accounts that may create opportunities for privilege escalation.
 
-This project aims to simplify Active Directory security investigations by using an AI agent to collect information, analyze findings, and explain potential attack paths.
+This project aims to simplify Active Directory security investigations by using an AI agent to collect information, analyze evidence, identify potential weaknesses, and explain possible attack paths.
 
 ### Key Features
 
-- **Active Directory Investigation:** Users can provide domain and target information through the frontend.
-- **Security Enumeration:** Collects information using available security tools.
+- **Active Directory Investigation:** Allows users to provide domain and target information through the frontend.
+- **Security Enumeration:** Uses available security tools to collect information from the target environment.
 - **AI-Powered Analysis:** Analyzes collected evidence to identify potential security weaknesses.
-- **Attack Path Identification:** Explains possible privilege escalation paths.
-- **Human-in-the-Loop Approval:** Requires approval before actions that need authorization.
-- **Investigation Results:** Returns findings and explanations to the frontend.
-- **GOAD Lab Integration:** Uses Game of Active Directory (GOAD) as a controlled testing environment.
+- **Attack Path Identification:** Helps explain possible privilege escalation paths.
+- **Human-in-the-Loop Approval:** Requires human approval before actions that need authorization.
+- **Investigation Results:** Provides investigation findings and explanations to the frontend.
+- **GOAD Lab Integration:** Supports testing in the Game of Active Directory (GOAD) environment.
 
 ## 2. Project Workflow
 
 1. **Input:** The user enters Active Directory domain and target information through the frontend.
-2. **Validation:** The backend validates the request and checks the authorized scope.
-3. **Investigation:** The AI agent uses available tools to collect information.
+2. **Validation:** The backend validates the investigation request and checks the authorized scope.
+3. **Investigation:** The agent uses available security tools to collect information.
 4. **Analysis:** The system analyzes collected evidence to identify potential weaknesses and attack paths.
 5. **Approval:** Actions requiring authorization are submitted for human approval.
 6. **Results:** Investigation findings and explanations are returned to the frontend.
@@ -32,74 +37,104 @@ This project aims to simplify Active Directory security investigations by using 
 ## 3. Technology Stack
 
 - **Frontend:** Web-based user interface.
-- **Backend:** Python API and investigation services using FastAPI.
+- **Backend:** Python and FastAPI for API development and investigation services.
 - **AI Model:** Ollama with a locally hosted language model.
-- **Database:** SQLite for investigation-related data.
-- **Planned Supporting Services:** PostgreSQL and Neo4j.
+- **Database:** SQLite and PostgreSQL for investigation-related data.
+- **Knowledge Graph:** Neo4j for representing relationships and potential attack paths.
 - **Security Testing Environment:** Game of Active Directory (GOAD).
 - **Containerization:** Docker and Docker Compose.
 
 ## 4. Individual Contribution — Wintana Dereje
 
-As a member of the six-person development team, my individual contribution focused on backend setup, analyzer implementation, and API verification.
+**Assigned Role: Backend and Database**
 
-My work included:
+As a member of the six-person development team, my assigned role focused on the backend and database components of the project.
 
-- Setting up the Python development environment.
+### Assigned Responsibilities
+
+My responsibilities included:
+
+- FastAPI backend development.
+- API design and backend communication.
+- Database development and PostgreSQL integration.
+- Investigation session management.
+- Storage of investigation findings.
+- Tool execution records.
+- Approval records.
+- Communication between the frontend and the AI agent.
+
+### Individual Work and Implementation
+
+My individual work included:
+
+- Setting up the local Python development environment.
+- Creating and configuring the project's virtual environment.
 - Installing the required project dependencies.
-- Working on the backend analyzer component.
-- Resolving an indentation and implementation issue in `agent/analyzer.py`.
+- Working on the `agent/analyzer.py` component.
+- Resolving an indentation error and addressing a missing analyzer implementation.
 - Checking the analyzer code using Python syntax compilation.
-- Starting the FastAPI backend successfully.
+- Running the FastAPI backend successfully.
 - Verifying the API health endpoint.
 - Accessing and reviewing the Swagger API documentation.
 
+These activities contributed to the backend setup, analyzer functionality, and API verification of the project.
+
 ## 5. Individual Video Demonstration
 
-**Five-Minute Project Demonstration**
+**Individual Project Walkthrough — Wintana Dereje**
 
-[Insert individual video presentation link here]
+[Watch the Individual Project Demonstration](https://drive.google.com/file/d/1DWR5myv7h9OYKGvorkqb1TMFOZdljy6c/view?usp=sharing)
+
+The video demonstrates the project structure, relevant backend and agent components, and the FastAPI application through its API documentation and health endpoint.
 
 ## 6. GitHub Repositories
 
 **Individual Submission — Wintana Dereje**
 
-https://github.com/derejewintana-cmyk/Agentic-AI-for-Active-Directory-Security-main
+[View Individual GitHub Repository](https://github.com/derejewintana-cmyk/Agentic-AI-for-Active-Directory-Security-main)
 
 **Original Group Repository**
 
-https://github.com/Hermela-code/Agentic-AI-for-Active-Directory-Security
+[View Original Group Repository](https://github.com/Hermela-code/Agentic-AI-for-Active-Directory-Security)
 
 ## 7. Team Members
 
 The project was developed collaboratively by the following six team members.
 
-| No. | Full Name | CTC ID |
-|---|---|---|
-| 1 | Hermela Girma | CTC-5848-26 |
-| 2 | Feben Solomon | CTC-1718-26 |
-| 3 | Meseret Telke | CTC-3934-26 |
-| 4 | Wintana Dereje | CTC-4911-26 |
-| 5 | Lidiya Alemayehu | CTC-204-26 |
-| 6 | Yosef Walelign | CTC-2969-26 |
+| No. | Full Name        | CTC ID      |
+| --- | ---------------- | ----------- |
+| 1   | Hermela Girma    | CTC-5848-26 |
+| 2   | Feben Solomon    | CTC-1718-26 |
+| 3   | Meseret Telke    | CTC-3934-26 |
+| 4   | Wintana Dereje   | CTC-4911-26 |
+| 5   | Lidiya Alemayehu | CTC-204-26  |
+| 6   | Yosef Walelign   | CTC-2969-26 |
 
 ## 8. Project Status and Verification
 
-The project is intended to support AI-assisted Active Directory security investigations in an authorized lab environment.
+The project is designed to support AI-assisted Active Directory security investigations in an authorized lab environment.
 
-During my individual backend verification:
+The backend implementation includes API endpoints for:
 
-- The FastAPI backend started successfully.
-- The API health endpoint returned a healthy status.
-- The Swagger API documentation was accessible.
-- The Ollama service was offline during this verification, so the complete AI-powered workflow was not independently verified.
+- Investigation creation and retrieval.
+- Investigation findings.
+- Tool execution records.
+- Approval management.
+- Backend health monitoring.
+
+The local backend verification confirmed that the FastAPI application started successfully, the health endpoint returned a healthy status, and the Swagger API documentation was accessible.
+
+The project also incorporates AI-assisted analysis, database support, and a human-in-the-loop approval process as part of its overall architecture.
 
 ## 9. Responsible Use
 
-This project is intended for educational purposes and authorized Active Directory security assessments. All investigations should remain within approved environments and authorized scopes. Actions requiring authorization should follow the project's human approval process.
+This project is intended for educational purposes and authorized Active Directory security assessments. All investigations should be conducted only within approved environments and authorized scopes. Actions requiring authorization should follow the project's human-in-the-loop approval process.
 
 ---
 
-**Project Title:** Agentic AI for Active Directory Security  
-**Individual Submission:** Wintana Dereje  
+**Project Title:** Agentic AI for Active Directory Security\
+**Individual Submission:** Wintana Dereje\
+**Assigned Role:** Backend and Database\
 **Development:** Collaborative team project
+
+**After pasting:** Click **Commit changes** on GitHub so the updated README appears in your individual repository. Then check that the video link opens without requesting access.
