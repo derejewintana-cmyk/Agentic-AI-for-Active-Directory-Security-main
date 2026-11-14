@@ -6,60 +6,75 @@ An agentic AI system designed to investigate Active Directory environments, iden
 
 ### Purpose
 
-Active Directory environments can contain misconfigurations, excessive permissions, and relationships between accounts that create potential paths to higher privileges. Identifying these issues requires understanding how different components of a domain interact.
+Active Directory environments can contain misconfigurations, excessive permissions, and relationships between accounts that create potential paths to higher privileges.
 
-This project aims to simplify Active Directory security investigations by using an AI agent to collect information, analyze findings, and explain potential attack paths in a clear and understandable way.
+This project aims to simplify Active Directory security investigations by using an AI agent to collect information, analyze findings, and explain potential attack paths.
 
 ### Key Features
 
-- **Active Directory Investigation:** Accepts domain and target information through a frontend and initiates investigations through the backend.
-- **Security Enumeration:** Collects information about the authorized Active Directory environment using available security tools.
-- **AI-Powered Analysis:** Analyzes collected evidence to identify potential security weaknesses.
-- **Attack Path Identification:** Explains possible privilege escalation paths based on discovered evidence.
-- **Human-in-the-Loop Approval:** Requests user approval before performing actions that require authorization.
-- **Investigation Results:** Returns findings and explanations to the frontend for review.
-- **GOAD Lab Integration:** Uses the Game of Active Directory (GOAD) lab as the controlled testing environment.
+- Active Directory investigation through a frontend and backend.
+- Security enumeration using available security tools.
+- AI-powered analysis of collected evidence.
+- Identification and explanation of potential attack paths.
+- Human-in-the-loop approval for actions requiring authorization.
+- Investigation findings and explanations presented to users.
+- GOAD (Game of Active Directory) lab integration for controlled testing.
 
 ## 2. How It Works
 
-The system follows an investigation workflow:
-
-1. **Input:** The user enters the Active Directory domain and target information through the frontend.
-2. **Validation:** The backend validates the request and checks whether the target is within the authorized scope.
-3. **Investigation:** The AI agent uses available tools to gather information about the environment.
-4. **Analysis:** The agent analyzes the collected evidence and identifies potential security weaknesses and attack paths.
-5. **Human Approval:** The system requests approval before performing actions that require authorization.
-6. **Results:** The findings and explanations are returned to the frontend for review.
-
-The objective is to make Active Directory security investigations easier to understand while keeping users involved in important decisions.
+1. **Input:** The user provides Active Directory domain and target information through the frontend.
+2. **Validation:** The backend processes the request and checks the authorized scope.
+3. **Investigation:** The AI agent uses available tools to gather information.
+4. **Analysis:** Collected evidence is analyzed to identify potential security weaknesses.
+5. **Human Approval:** Actions requiring authorization are submitted for approval.
+6. **Results:** Findings and explanations are returned for review.
 
 ## 3. Technology Stack
 
-- **Frontend:** Web-based user interface
-- **Backend:** Python API and investigation services
-- **AI Model:** Ollama with a locally hosted language model
-- **Database:** SQLite for investigation-related data, with PostgreSQL and Neo4j planned for supporting services
-- **Security Testing Environment:** Game of Active Directory (GOAD)
-- **Containerization:** Docker and Docker Compose
+- **Frontend:** Web-based user interface.
+- **Backend:** Python and FastAPI.
+- **AI Model:** Ollama with a locally hosted language model.
+- **Database:** SQLite for investigation-related data.
+- **Supporting Services:** PostgreSQL and Neo4j as planned supporting technologies.
+- **Security Testing Environment:** Game of Active Directory (GOAD).
+- **Containerization:** Docker and Docker Compose.
 
-## 4. Video Presentation
+## 4. Individual Contribution — Wintana Dereje
 
-**Five-Minute Project Demonstration**
+As a member of the project development team, my contribution focused on the backend component.
 
-[Watch the Project Presentation](https://drive.google.com/file/d/1qEz9dbFFtRUWPBwDo_j5f0voFwBZysKe/view?usp=sharing)
+My work included:
 
-## 5. GitHub Repository
+- Setting up the Python development environment.
+- Installing the required project dependencies.
+- Working on the backend analyzer component.
+- Resolving an indentation and implementation issue in `agent/analyzer.py`.
+- Checking the analyzer's Python syntax.
+- Starting the FastAPI backend successfully.
+- Verifying the API health endpoint and Swagger documentation.
 
-**Repository Link:** [Agentic AI for Active Directory Security](https://github.com/Hermela-code/Agentic-AI-for-Active-Directory-Security)
+## 5. Video Presentation
 
-The repository contains the project's source code, including the agent, backend, frontend, configuration, and supporting documentation.
+**Individual Five-Minute Project Demonstration**
 
-## 6. Team Members
+[Insert individual video presentation link here]
 
-The project is developed by a team of six members.
+## 6. GitHub Repositories
+
+**Individual Submission:**
+
+https://github.com/derejewintana-cmyk/Agentic-AI-for-Active-Directory-Security
+
+**Original Group Project:**
+
+https://github.com/Hermela-code/Agentic-AI-for-Active-Directory-Security
+
+## 7. Team Members
+
+The project was developed collaboratively by six team members.
 
 | No. | Full Name | CTC ID |
-|---:|---|---|
+|---|---|---|
 | 1 | Hermela Girma | CTC-5848-26 |
 | 2 | Feben Solomon | CTC-1718-26 |
 | 3 | Meseret Telke | CTC-3934-26 |
@@ -67,19 +82,16 @@ The project is developed by a team of six members.
 | 5 | Lidiya Alemayehu | CTC-204-26 |
 | 6 | Yosef Walelign | CTC-2969-26 |
 
-Replace the placeholders with each member's official CTC ID before submission.
+## 8. Project Status
 
-## 7. Project Status
+The project provides a framework for AI-assisted Active Directory security investigation. During my individual backend verification, the FastAPI server started successfully, the health endpoint responded successfully, and the Swagger API documentation was accessible. The Ollama service was offline during this verification, so the complete AI-powered workflow was not independently verified.
 
-Testing is being conducted in an authorized GOAD lab environment.
+## 9. Responsible Use
 
-## 8. Responsible Use
-
-This project is intended for educational purposes and authorized Active Directory security assessments. Investigations must remain within the approved scope, and actions requiring authorization must follow the human approval process.
+This project is intended for educational purposes and authorized Active Directory security assessments. All investigations should remain within approved environments and scope, with appropriate authorization for security actions.
 
 ---
 
 **Project:** Agentic AI for Active Directory Security  
-**Focus:** Agentic AI and Active Directory Security  
-**Testing Environment:** Game of Active Directory (GOAD)  
-**Repository:** [GitHub](https://github.com/Hermela-code/Agentic-AI-for-Active-Directory-Security)
+**Individual Submission:** Wintana Dereje  
+**Team Project:** Agentic AI for Active Directory Security
