@@ -131,5 +131,3 @@ This project is intended for educational purposes and authorized Active Director
 **Individual Submission:** Wintana Dereje\
 **Assigned Role:** Backend and Database\
 **Development:** Collaborative team project
-
-**After pasting:** Click **Commit changes** on GitHub so the updated README appears in your individual repository. Then check that the video link opens without requesting access.
