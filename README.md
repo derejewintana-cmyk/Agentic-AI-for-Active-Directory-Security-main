@@ -1,8 +1,3 @@
-
-Here is the corrected, complete README. I removed the unnecessary limitations about your other PC and presented your assigned role and contribution professionally.
-
-**Copy everything below and replace your current&#x20;**`README.md`**&#x20;with it.**
-
 # Agentic AI for Active Directory Security
 
 An agentic AI system designed to investigate Active Directory environments, identify potential security weaknesses, and explain possible attack paths. The project combines AI-powered analysis, security enumeration tools, and human-in-the-loop approval to support security investigations in authorized lab environments.
